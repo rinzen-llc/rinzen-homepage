@@ -1,0 +1,70 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高齢者等サポート事業｜合同会社りんぜん</title><meta name="description" content="身元保証サービスを中心に、安心した暮らしを支えます。">
+<style>
+:root{
+ --green:#5d8d42;--deep:#365d39;--dark:#3c2c20;--brown:#76553c;
+ --cream:#faf7ee;--pale:#eef5e6;--line:#ddd7ca;--gold:#b89b69;--text:#493f36;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);background:#fffdf8;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8}
+a{color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid rgba(90,80,60,.08);backdrop-filter:blur(10px)}
+.header-inner{height:92px;display:flex;align-items:center;gap:30px}
+.logo{display:flex;align-items:center;text-decoration:none;min-width:250px}
+.logo img{width:92px;height:70px;object-fit:contain}
+.logo-text{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.1}
+.logo-text small{display:block;font-size:12px;letter-spacing:.12em}.logo-text strong{display:block;font-size:29px;font-weight:500;letter-spacing:.08em}
+nav{display:flex;gap:25px;align-items:center;justify-content:flex-end;flex:1;font-size:14px}
+nav a{text-decoration:none;white-space:nowrap}nav a:hover{color:var(--green)}
+.cta{background:var(--green);color:white!important;padding:12px 22px;border-radius:28px;box-shadow:0 5px 15px rgba(54,93,57,.15)}
+.hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#fffaf1 0%,rgba(255,250,241,.82) 45%,rgba(255,250,241,0) 68%),url("assets/hero.jpg") right center/cover no-repeat}
+.hero:before{content:"";position:absolute;left:-30px;top:100px;width:115px;height:210px;background:url("assets/leaf.svg") center/contain no-repeat;opacity:.75}
+.hero-copy{position:relative;z-index:1;width:min(1180px,92%);margin:auto;padding:60px 0}
+.hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(42px,5vw,70px);font-weight:500;line-height:1.25;letter-spacing:.04em;margin:0 0 18px;color:#4c392d}
+.hero h1 span{display:block;font-size:.48em;line-height:1.8;letter-spacing:.06em}
+.hero .lead{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:22px;line-height:1.8;margin:0 0 28px}
+.section{padding:75px 0}.section.cream{background:var(--cream)}
+.section-title{text-align:center;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;color:#493a2d;margin:0 0 40px;font-size:34px;font-weight:500}
+.section-title:before,.section-title:after{content:"";display:inline-block;width:42px;height:1px;background:#8f806c;vertical-align:middle;margin:0 16px}
+.section-sub{text-align:center;margin:-25px auto 38px;color:#665d52}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:white;border:1px solid #e7e0d4;border-radius:14px;overflow:hidden;box-shadow:0 8px 25px rgba(70,55,40,.07);display:flex;flex-direction:column}
+.card img{width:100%;height:205px;object-fit:cover}
+.card-body{padding:24px;text-align:center;flex:1;display:flex;flex-direction:column}
+.card h3{color:var(--deep);font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:22px;margin:0 0 6px}
+.card h3 small{display:block;font-size:14px;color:var(--brown);font-family:inherit}
+.card p{font-size:14px;line-height:1.9;margin:14px 0 22px}
+.btn{display:inline-block;text-decoration:none;background:var(--green);color:white;padding:10px 28px;border-radius:24px;font-size:14px;margin-top:auto}
+.btn.brown{background:#a07a4e}
+.philosophy{display:grid;grid-template-columns:1fr 1.25fr;align-items:stretch;background:#f8f6ef}
+.philosophy img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.philosophy-copy{padding:65px 8%}
+.philosophy-copy h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:34px;font-weight:500;margin:0 0 20px}
+.philosophy-copy p{max-width:650px}.signature{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;color:#4e8159;font-size:25px;margin-top:28px;text-align:right}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#eef5e6}
+.info-box{padding:45px 8%;border-right:1px solid #d6dfcf;position:relative;overflow:hidden}
+.info-box:last-child{border-right:0}.info-box h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:24px;margin:0 0 8px;color:var(--deep)}
+.info-box p{margin:5px 0 20px}.area-bg{position:absolute;right:0;bottom:0;width:48%;height:100%;object-fit:cover;opacity:.42;mix-blend-mode:multiply}
+.contact-number{font-size:30px;color:var(--deep);font-weight:600;letter-spacing:.04em}.contact-number a{text-decoration:none}
+footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.footer-logo{display:flex;align-items:center;gap:12px;font-family:"Yu Mincho","Hiragino Mincho ProN",serif}.footer-logo img{width:58px;height:58px;object-fit:contain;filter:brightness(0) invert(1);opacity:.95}
+.footer-nav{display:flex;gap:18px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}.footer-nav a{text-decoration:none}
+.copyright{text-align:center;font-size:11px;opacity:.75;margin-top:20px}
+.notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:35px;max-width:850px;margin:auto;text-align:center}
+.notice strong{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:23px;font-weight:500;color:var(--deep)}
+.notice p{margin:12px 0 0}
+.detail{max-width:920px;margin:auto}.detail h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:42px;font-weight:500;color:var(--deep)}
+.detail-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:28px 0}.detail-list div{background:var(--pale);padding:15px 18px;border-radius:10px}
+.back{display:inline-block;margin-top:20px;color:var(--deep);font-weight:600}
+@media(max-width:900px){
+ header{position:relative}.header-inner{height:auto;padding:12px 0;flex-wrap:wrap}.logo{min-width:0;flex:1}.logo img{width:70px;height:55px}.logo-text strong{font-size:22px}nav{order:3;width:100%;overflow:auto;justify-content:flex-start;gap:17px;padding-bottom:5px}
+ .hero{min-height:560px;background:linear-gradient(90deg,rgba(255,250,241,.95) 0%,rgba(255,250,241,.75) 54%,rgba(255,250,241,.08) 100%),url("assets/hero.jpg") center/cover}
+ .hero-copy{padding:55px 0}.hero h1{font-size:44px}.hero .lead{font-size:18px}
+ .services{grid-template-columns:1fr}.philosophy{grid-template-columns:1fr}.philosophy-copy{padding:45px 6%}.info-grid{grid-template-columns:1fr}.info-box{border-right:0;border-bottom:1px solid #d6dfcf}.footer-inner{flex-direction:column;align-items:flex-start}.footer-nav{justify-content:flex-start}
+}
+@media(max-width:520px){.section{padding:55px 0}.section-title{font-size:28px}.section-title:before,.section-title:after{width:20px;margin:0 9px}.hero h1{font-size:37px}.hero h1 span{font-size:.53em}.detail h1{font-size:32px}.detail-list{grid-template-columns:1fr}.card img{height:190px}.contact-number{font-size:25px}}
+</style></head><body>
+<header><div class="container header-inner"><a class="logo" href="index.html"><img src="assets/logo.jpeg" alt=""><span class="logo-text"><small>合同会社</small><strong>りんぜん</strong></span></a><nav><a href="index.html">ホーム</a><a href="index.html#services">事業内容</a><a class="cta" href="tel:0475460572">0475-46-0572</a></nav></div></header>
+<main><section class="section cream"><div class="detail"><div class="section-sub">身元保証サービスを中心に、安心した暮らしを支えます。</div><h1>高齢者等サポート事業</h1><div class="notice" style="text-align:left"><p>身元保証サービスを中心に、安心した暮らしを支えます。</p><div class="detail-list"><div>✓ 身元保証サービス</div><div>✓ 日常生活に関するサポート</div><div>✓ 入院・入院時等の生活支援</div><div>✓ 一部日常生活支援込み</div></div><p>※身元保証サービスには一部日常生活支援が含まれます。具体的な内容・条件は事前にご説明します。</p></div><a class="back" href="index.html#services">← 事業内容へ戻る</a></div></section></main>
+<footer><div class="copyright">© 合同会社りんぜん. All Rights Reserved.</div></footer></body></html>

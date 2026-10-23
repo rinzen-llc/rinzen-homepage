@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>合同会社りんぜん｜生活と人を支え、1人ひとりの「これから」にあきらめをつくらない。</title>
+<meta name="description" content="合同会社りんぜんは、茂原市・長生郡を中心に、居宅介護支援、高齢者等サポート、日常生活支援を行っています。">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="合同会社りんぜん">
+<meta property="og:description" content="生活と人を支え、1人ひとりの「これから」にあきらめをつくらない。">
+<meta property="og:type" content="website">
+<style>
+:root{
+ --green:#5d8d42;--deep:#365d39;--dark:#3c2c20;--brown:#76553c;
+ --cream:#faf7ee;--pale:#eef5e6;--line:#ddd7ca;--gold:#b89b69;--text:#493f36;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);background:#fffdf8;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8}
+a{color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid rgba(90,80,60,.08);backdrop-filter:blur(10px)}
+.header-inner{height:92px;display:flex;align-items:center;gap:30px}
+.logo{display:flex;align-items:center;text-decoration:none;min-width:250px}
+.logo img{width:92px;height:70px;object-fit:contain}
+.logo-text{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.1}
+.logo-text small{display:block;font-size:12px;letter-spacing:.12em}.logo-text strong{display:block;font-size:29px;font-weight:500;letter-spacing:.08em}
+nav{display:flex;gap:25px;align-items:center;justify-content:flex-end;flex:1;font-size:14px}
+nav a{text-decoration:none;white-space:nowrap}nav a:hover{color:var(--green)}
+.cta{background:var(--green);color:white!important;padding:12px 22px;border-radius:28px;box-shadow:0 5px 15px rgba(54,93,57,.15)}
+.hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#fffaf1 0%,rgba(255,250,241,.82) 45%,rgba(255,250,241,0) 68%),url("assets/hero.jpg") right center/cover no-repeat}
+.hero:before{content:"";position:absolute;left:-30px;top:100px;width:115px;height:210px;background:url("assets/leaf.svg") center/contain no-repeat;opacity:.75}
+.hero-copy{position:relative;z-index:1;width:min(1180px,92%);margin:auto;padding:60px 0}
+.hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(42px,5vw,70px);font-weight:500;line-height:1.25;letter-spacing:.04em;margin:0 0 18px;color:#4c392d}
+.hero h1 span{display:block;font-size:.48em;line-height:1.8;letter-spacing:.06em}
+.hero .lead{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:22px;line-height:1.8;margin:0 0 28px}
+.section{padding:75px 0}.section.cream{background:var(--cream)}
+.section-title{text-align:center;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;color:#493a2d;margin:0 0 40px;font-size:34px;font-weight:500}
+.section-title:before,.section-title:after{content:"";display:inline-block;width:42px;height:1px;background:#8f806c;vertical-align:middle;margin:0 16px}
+.section-sub{text-align:center;margin:-25px auto 38px;color:#665d52}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:white;border:1px solid #e7e0d4;border-radius:14px;overflow:hidden;box-shadow:0 8px 25px rgba(70,55,40,.07);display:flex;flex-direction:column}
+.card img{width:100%;height:205px;object-fit:cover}
+.card-body{padding:24px;text-align:center;flex:1;display:flex;flex-direction:column}
+.card h3{color:var(--deep);font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:22px;margin:0 0 6px}
+.card h3 small{display:block;font-size:14px;color:var(--brown);font-family:inherit}
+.card p{font-size:14px;line-height:1.9;margin:14px 0 22px}
+.btn{display:inline-block;text-decoration:none;background:var(--green);color:white;padding:10px 28px;border-radius:24px;font-size:14px;margin-top:auto}
+.btn.brown{background:#a07a4e}
+.philosophy{display:grid;grid-template-columns:1fr 1.25fr;align-items:stretch;background:#f8f6ef}
+.philosophy img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.philosophy-copy{padding:65px 8%}
+.philosophy-copy h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:34px;font-weight:500;margin:0 0 20px}
+.philosophy-copy p{max-width:650px}.signature{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;color:#4e8159;font-size:25px;margin-top:28px;text-align:right}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#eef5e6}
+.info-box{padding:45px 8%;border-right:1px solid #d6dfcf;position:relative;overflow:hidden}
+.info-box:last-child{border-right:0}.info-box h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:24px;margin:0 0 8px;color:var(--deep)}
+.info-box p{margin:5px 0 20px}.area-bg{position:absolute;right:0;bottom:0;width:48%;height:100%;object-fit:cover;opacity:.42;mix-blend-mode:multiply}
+.contact-number{font-size:30px;color:var(--deep);font-weight:600;letter-spacing:.04em}.contact-number a{text-decoration:none}
+footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.footer-logo{display:flex;align-items:center;gap:12px;font-family:"Yu Mincho","Hiragino Mincho ProN",serif}.footer-logo img{width:58px;height:58px;object-fit:contain;filter:brightness(0) invert(1);opacity:.95}
+.footer-nav{display:flex;gap:18px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}.footer-nav a{text-decoration:none}
+.copyright{text-align:center;font-size:11px;opacity:.75;margin-top:20px}
+.notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:35px;max-width:850px;margin:auto;text-align:center}
+.notice strong{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:23px;font-weight:500;color:var(--deep)}
+.notice p{margin:12px 0 0}
+.detail{max-width:920px;margin:auto}.detail h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:42px;font-weight:500;color:var(--deep)}
+.detail-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:28px 0}.detail-list div{background:var(--pale);padding:15px 18px;border-radius:10px}
+.back{display:inline-block;margin-top:20px;color:var(--deep);font-weight:600}
+@media(max-width:900px){
+ header{position:relative}.header-inner{height:auto;padding:12px 0;flex-wrap:wrap}.logo{min-width:0;flex:1}.logo img{width:70px;height:55px}.logo-text strong{font-size:22px}nav{order:3;width:100%;overflow:auto;justify-content:flex-start;gap:17px;padding-bottom:5px}
+ .hero{min-height:560px;background:linear-gradient(90deg,rgba(255,250,241,.95) 0%,rgba(255,250,241,.75) 54%,rgba(255,250,241,.08) 100%),url("assets/hero.jpg") center/cover}
+ .hero-copy{padding:55px 0}.hero h1{font-size:44px}.hero .lead{font-size:18px}
+ .services{grid-template-columns:1fr}.philosophy{grid-template-columns:1fr}.philosophy-copy{padding:45px 6%}.info-grid{grid-template-columns:1fr}.info-box{border-right:0;border-bottom:1px solid #d6dfcf}.footer-inner{flex-direction:column;align-items:flex-start}.footer-nav{justify-content:flex-start}
+}
+@media(max-width:520px){.section{padding:55px 0}.section-title{font-size:28px}.section-title:before,.section-title:after{width:20px;margin:0 9px}.hero h1{font-size:37px}.hero h1 span{font-size:.53em}.detail h1{font-size:32px}.detail-list{grid-template-columns:1fr}.card img{height:190px}.contact-number{font-size:25px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container header-inner">
+  <a class="logo" href="index.html">
+   <img src="assets/logo.jpeg" alt="合同会社りんぜん ロゴ">
+   <span class="logo-text"><small>合同会社</small><strong>りんぜん</strong></span>
+  </a>
+  <nav aria-label="メインナビゲーション">
+   <a href="#home">ホーム</a><a href="#about">りんぜんについて</a><a href="#services">事業内容</a>
+   <a href="#flow">ご利用の流れ</a><a href="#area">対応エリア</a><a href="#company">会社概要</a>
+   <a class="cta" href="#contact">✉ ご相談・お問い合わせ</a>
+  </nav>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="hero-copy">
+  <h1>安心は創れる<span>生活と人を支え、<br>納得のいく選択を実現するために…</span></h1>
+  <p class="lead">生活と人を支え、1人ひとりの「これから」に<br>あきらめをつくらない。</p>
+ </div>
+</section>
+
+<section id="services" class="section">
+ <div class="container">
+  <h2 class="section-title">私たちの3つの事業</h2>
+  <p class="section-sub">それぞれの専門性を活かし、あなたの「安心」と「これから」を支えます。</p>
+  <div class="services">
+   <article class="card"><img src="assets/service1.jpg" alt="居宅介護支援の相談風景"><div class="card-body">
+    <h3>居宅介護支援事業</h3><p>ケアマネジャーがご自宅を訪問し、一人ひとりに合ったケアプランを作成します。介護保険に関するご相談もお気軽に。</p><a class="btn" href="kyotaku.html">詳しく見る →</a>
+   </div></article>
+   <article class="card"><img src="assets/service2.jpg" alt="高齢者等サポートのイメージ"><div class="card-body">
+    <h3>高齢者等サポート事業<small>（身元保証サービス）</small></h3><p>ご家族に代わって、身元保証や生活支援を行い、安心できる暮らしをサポートします。</p><a class="btn brown" href="support.html">詳しく見る →</a>
+   </div></article>
+   <article class="card"><img src="assets/service3.jpg" alt="日常生活支援のイメージ"><div class="card-body">
+    <h3>日常生活支援事業<small>（日常生活支援サービス）</small></h3><p>買い物・通院の付き添い、家事支援など、日常生活を安心して送れるようサポートします。</p><a class="btn" href="daily.html">詳しく見る →</a>
+   </div></article>
+  </div>
+ </div>
+</section>
+
+<section id="about" class="philosophy">
+ <img src="assets/philosophy.jpg" alt="新しい芽のイメージ">
+ <div class="philosophy-copy">
+  <h2>りんぜんの想い</h2>
+  <p>私たちは、利用者様とそのご家族が「その人らしい生活」を送れるように、専門性と温かい心で寄り添い、支え続けます。</p>
+  <p>どんな小さなことでも、まずはご相談ください。生活の中にある「困った」を一緒に整理し、その人にとって納得のいく選択を考えていきます。</p>
+  <div class="signature">一人ひとりの<br>これからに、寄り添う。</div>
+ </div>
+</section>
+
+<section id="area" class="info-grid">
+ <div class="info-box">
+  <h3>● 対応エリア</h3>
+  <p><strong>茂原市、長生郡</strong><br>地域の状況に合わせて対応いたします。</p>
+  <p>※エリア外は要相談</p>
+  <a class="btn" href="#area">対応エリアを見る →</a>
+  <img class="area-bg" src="assets/area.jpg" alt="">
+ </div>
+ <div id="contact" class="info-box">
+  <h3>▣ ご相談・お問い合わせ</h3>
+  <p>まずはお気軽にご連絡ください。<br>訪問相談も承ります。</p>
+  <div class="contact-number"><a href="tel:0475460572">0475-46-0572</a></div>
+  <p>受付時間 8:30〜17:30<br>土日祝日休み</p>
+  <a class="btn" href="tel:0475460572">電話で相談する →</a>
+ </div>
+</section>
+
+<section id="flow" class="section cream">
+ <div class="container">
+  <h2 class="section-title">ご利用の流れ</h2>
+  <p class="section-sub">まずはご相談から。内容を伺い、必要な支援をご案内します。</p>
+  <div class="services">
+   <div class="card"><div class="card-body"><h3>01 ご相談・お問い合わせ</h3><p>お電話などでお気軽にご相談ください。</p></div></div>
+   <div class="card"><div class="card-body"><h3>02 面談・ご説明</h3><p>お困りごとやご希望を伺い、サービスをご説明します。</p></div></div>
+   <div class="card"><div class="card-body"><h3>03 サポート開始</h3><p>内容にご納得いただいたうえで、支援を開始します。</p></div></div>
+  </div>
+  <p style="text-align:center;margin-top:25px;font-size:13px">※日常生活支援のみの場合は契約がない場合があります。詳しくはお問い合わせください。</p>
+ </div>
+</section>
+
+<section id="company" class="section">
+ <div class="container">
+  <h2 class="section-title">会社概要</h2>
+  <div class="notice" style="text-align:left">
+   <p><strong>合同会社りんぜん</strong></p>
+   <p>事業：居宅介護支援事業／高齢者等サポート事業／日常生活支援事業</p>
+   <p>対応エリア：茂原市、長生郡（エリア外は要相談）</p>
+   <p>電話：<a href="tel:0475460572">0475-46-0572</a></p>
+   <p>営業時間：8:30〜17:30　土日祝日休み</p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-inner">
+   <div class="footer-logo"><img src="assets/logo.jpeg" alt=""><span>合同会社りんぜん</span></div>
+   <div class="footer-nav">
+    <a href="#home">ホーム</a><a href="#about">りんぜんについて</a><a href="#services">事業内容</a>
+    <a href="#flow">ご利用の流れ</a><a href="#area">対応エリア</a><a href="#company">会社概要</a>
+   </div>
+  </div>
+  <div class="copyright">© 合同会社りんぜん. All Rights Reserved.</div>
+ </div>
+</footer>
+</body>
+</html>
