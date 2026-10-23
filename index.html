@@ -27,8 +27,8 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-
 nav{display:flex;gap:25px;align-items:center;justify-content:flex-end;flex:1;font-size:14px}
 nav a{text-decoration:none;white-space:nowrap}nav a:hover{color:var(--green)}
 .cta{background:var(--green);color:white!important;padding:12px 22px;border-radius:28px;box-shadow:0 5px 15px rgba(54,93,57,.15)}
-.hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#fffaf1 0%,rgba(255,250,241,.82) 45%,rgba(255,250,241,0) 68%),url("assets/hero.jpg") right center/cover no-repeat}
-.hero:before{content:"";position:absolute;left:-30px;top:100px;width:115px;height:210px;background:url("assets/leaf.svg") center/contain no-repeat;opacity:.75}
+.hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,#fffaf1 0%,rgba(255,250,241,.82) 45%,rgba(255,250,241,0) 68%),url("hero.jpg") right center/cover no-repeat}
+.hero:before{content:"";position:absolute;left:-30px;top:100px;width:115px;height:210px;background:url("leaf.svg") center/contain no-repeat;opacity:.75}
 .hero-copy{position:relative;z-index:1;width:min(1180px,92%);margin:auto;padding:60px 0}
 .hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(42px,5vw,70px);font-weight:500;line-height:1.25;letter-spacing:.04em;margin:0 0 18px;color:#4c392d}
 .hero h1 span{display:block;font-size:.48em;line-height:1.8;letter-spacing:.06em}
@@ -68,7 +68,7 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
 .back{display:inline-block;margin-top:20px;color:var(--deep);font-weight:600}
 @media(max-width:900px){
  header{position:relative}.header-inner{height:auto;padding:12px 0;flex-wrap:wrap}.logo{min-width:0;flex:1}.logo img{width:70px;height:55px}.logo-text strong{font-size:22px}nav{order:3;width:100%;overflow:auto;justify-content:flex-start;gap:17px;padding-bottom:5px}
- .hero{min-height:560px;background:linear-gradient(90deg,rgba(255,250,241,.95) 0%,rgba(255,250,241,.75) 54%,rgba(255,250,241,.08) 100%),url("assets/hero.jpg") center/cover}
+ .hero{min-height:560px;background:linear-gradient(90deg,rgba(255,250,241,.95) 0%,rgba(255,250,241,.75) 54%,rgba(255,250,241,.08) 100%),url("hero.jpg") center/cover}
  .hero-copy{padding:55px 0}.hero h1{font-size:44px}.hero .lead{font-size:18px}
  .services{grid-template-columns:1fr}.philosophy{grid-template-columns:1fr}.philosophy-copy{padding:45px 6%}.info-grid{grid-template-columns:1fr}.info-box{border-right:0;border-bottom:1px solid #d6dfcf}.footer-inner{flex-direction:column;align-items:flex-start}.footer-nav{justify-content:flex-start}
 }
@@ -79,7 +79,7 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
 <header>
  <div class="container header-inner">
   <a class="logo" href="index.html">
-   <img src="assets/logo.jpeg" alt="合同会社りんぜん ロゴ">
+   <img src="logo.jpeg" alt="合同会社りんぜん ロゴ">
    <span class="logo-text"><small>合同会社</small><strong>りんぜん</strong></span>
   </a>
   <nav aria-label="メインナビゲーション">
@@ -103,13 +103,13 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
   <h2 class="section-title">私たちの3つの事業</h2>
   <p class="section-sub">それぞれの専門性を活かし、あなたの「安心」と「これから」を支えます。</p>
   <div class="services">
-   <article class="card"><img src="assets/service1.jpg" alt="居宅介護支援の相談風景"><div class="card-body">
+   <article class="card"><img src="service1.jpg" alt="居宅介護支援の相談風景"><div class="card-body">
     <h3>居宅介護支援事業</h3><p>ケアマネジャーがご自宅を訪問し、一人ひとりに合ったケアプランを作成します。介護保険に関するご相談もお気軽に。</p><a class="btn" href="kyotaku.html">詳しく見る →</a>
    </div></article>
-   <article class="card"><img src="assets/service2.jpg" alt="高齢者等サポートのイメージ"><div class="card-body">
+   <article class="card"><img src="service2.jpg" alt="高齢者等サポートのイメージ"><div class="card-body">
     <h3>高齢者等サポート事業<small>（身元保証サービス）</small></h3><p>ご家族に代わって、身元保証や生活支援を行い、安心できる暮らしをサポートします。</p><a class="btn brown" href="support.html">詳しく見る →</a>
    </div></article>
-   <article class="card"><img src="assets/service3.jpg" alt="日常生活支援のイメージ"><div class="card-body">
+   <article class="card"><img src="service3.jpg" alt="日常生活支援のイメージ"><div class="card-body">
     <h3>日常生活支援事業<small>（日常生活支援サービス）</small></h3><p>買い物・通院の付き添い、家事支援など、日常生活を安心して送れるようサポートします。</p><a class="btn" href="daily.html">詳しく見る →</a>
    </div></article>
   </div>
@@ -117,7 +117,7 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
 </section>
 
 <section id="about" class="philosophy">
- <img src="assets/philosophy.jpg" alt="新しい芽のイメージ">
+ <img src="philosophy.jpg" alt="新しい芽のイメージ">
  <div class="philosophy-copy">
   <h2>りんぜんの想い</h2>
   <p>私たちは、利用者様とそのご家族が「その人らしい生活」を送れるように、専門性と温かい心で寄り添い、支え続けます。</p>
@@ -132,7 +132,7 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
   <p><strong>茂原市、長生郡</strong><br>地域の状況に合わせて対応いたします。</p>
   <p>※エリア外は要相談</p>
   <a class="btn" href="#area">対応エリアを見る →</a>
-  <img class="area-bg" src="assets/area.jpg" alt="">
+  <img class="area-bg" src="area.jpg" alt="">
  </div>
  <div id="contact" class="info-box">
   <h3>▣ ご相談・お問い合わせ</h3>
@@ -173,7 +173,7 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
 <footer>
  <div class="container">
   <div class="footer-inner">
-   <div class="footer-logo"><img src="assets/logo.jpeg" alt=""><span>合同会社りんぜん</span></div>
+   <div class="footer-logo"><img src="logo.jpeg" alt=""><span>合同会社りんぜん</span></div>
    <div class="footer-nav">
     <a href="#home">ホーム</a><a href="#about">りんぜんについて</a><a href="#services">事業内容</a>
     <a href="#flow">ご利用の流れ</a><a href="#area">対応エリア</a><a href="#company">会社概要</a>
