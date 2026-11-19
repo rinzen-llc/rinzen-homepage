@@ -37,10 +37,8 @@ nav a{text-decoration:none;white-space:nowrap}nav a:hover{color:var(--green)}
 .section-title{text-align:center;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;color:#493a2d;margin:0 0 40px;font-size:34px;font-weight:500}
 .section-title:before,.section-title:after{content:"";display:inline-block;width:42px;height:1px;background:#8f806c;vertical-align:middle;margin:0 16px}
 .section-sub{text-align:center;margin:-25px auto 38px;color:#665d52}
-.services{display:grid;grid-template-columns:.92fr 1.16fr .92fr;gap:24px;align-items:stretch}
-.services>.card:nth-child(2){transform:scale(1.035);z-index:1}
-.services>.card:nth-child(2) img{height:245px;object-fit:contain;background:#fff}
-.services>.card:nth-child(1) img,.services>.card:nth-child(3) img{height:190px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.services>.card img{height:205px;object-fit:cover}
 .card{background:white;border:1px solid #e7e0d4;border-radius:14px;overflow:hidden;box-shadow:0 8px 25px rgba(70,55,40,.07);display:flex;flex-direction:column}
 .card img{width:100%;height:205px;object-fit:cover}
 .card-body{padding:24px;text-align:center;flex:1;display:flex;flex-direction:column}
@@ -54,9 +52,11 @@ nav a{text-decoration:none;white-space:nowrap}nav a:hover{color:var(--green)}
 .philosophy-copy{padding:65px 8%}
 .philosophy-copy h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:34px;font-weight:500;margin:0 0 20px}
 .philosophy-copy p{max-width:650px}.signature{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;color:#4e8159;font-size:25px;margin-top:28px;text-align:right}
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#eef5e6}
+.info-grid{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:0;background:#eef5e6;align-items:stretch}
 .info-box{padding:45px 8%;border-right:1px solid #d6dfcf;position:relative;overflow:hidden}
 .info-box:last-child{border-right:0}.info-box h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:24px;margin:0 0 8px;color:var(--deep)}
+.info-image{min-height:330px;overflow:hidden}
+.info-image img{display:block;width:100%;height:100%;min-height:330px;object-fit:cover}
 .info-box p{margin:5px 0 20px}.area-bg{position:absolute;right:0;bottom:0;width:48%;height:100%;object-fit:cover;opacity:.42;mix-blend-mode:multiply}
 .contact-number{font-size:30px;color:var(--deep);font-weight:600;letter-spacing:.04em}.contact-number a{text-decoration:none}
 footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
@@ -73,7 +73,7 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
  header{position:relative}.header-inner{height:auto;padding:12px 0;flex-wrap:wrap}.logo{min-width:0;flex:1}.logo img{width:70px;height:55px}.logo-text strong{font-size:22px}nav{order:3;width:100%;overflow:auto;justify-content:flex-start;gap:17px;padding-bottom:5px}
  .hero{min-height:560px;background:linear-gradient(90deg,rgba(255,250,241,.95) 0%,rgba(255,250,241,.75) 54%,rgba(255,250,241,.08) 100%),url("hero.jpg") center/cover}
  .hero-copy{padding:55px 0}.hero h1{font-size:44px}.hero .lead{font-size:18px}
- .services{grid-template-columns:1fr;gap:20px}.services>.card:nth-child(2){transform:none}.services>.card:nth-child(2) img{height:220px;object-fit:contain}.services>.card:nth-child(1) img,.services>.card:nth-child(3) img{height:190px}.philosophy{grid-template-columns:1fr}.philosophy-copy{padding:45px 6%}.info-grid{grid-template-columns:1fr}.info-box{border-right:0;border-bottom:1px solid #d6dfcf}.footer-inner{flex-direction:column;align-items:flex-start}.footer-nav{justify-content:flex-start}
+ .services{grid-template-columns:1fr;gap:20px}.services>.card img{height:205px}.philosophy{grid-template-columns:1fr}.philosophy-copy{padding:45px 6%}.info-grid{grid-template-columns:1fr}.info-box{border-right:0;border-bottom:1px solid #d6dfcf}.info-image{min-height:240px}.info-image img{min-height:240px;max-height:280px}.footer-inner{flex-direction:column;align-items:flex-start}.footer-nav{justify-content:flex-start}
 }
 @media(max-width:520px){.section{padding:55px 0}.section-title{font-size:28px}.section-title:before,.section-title:after{width:20px;margin:0 9px}.hero h1{font-size:37px}.hero h1 span{font-size:.53em}.detail h1{font-size:32px}.detail-list{grid-template-columns:1fr}.card img{height:190px}.contact-number{font-size:25px}}
 </style>
@@ -135,8 +135,8 @@ footer{background:#3c2c20;color:#fff;padding:35px 0 22px}
   <p><strong>茂原市、長生郡</strong><br>地域の状況に合わせて対応いたします。</p>
   <p>※エリア外は要相談</p>
   <a class="btn" href="#area">対応エリアを見る →</a>
-  <img class="area-bg" src="area.jpg" alt="">
  </div>
+ <div class="info-image"><img src="area.jpg" alt="りんぜんの対応地域の風景"></div>
  <div id="contact" class="info-box">
   <h3>▣ ご相談・お問い合わせ</h3>
   <p>まずはお気軽にご連絡ください。<br>訪問相談も承ります。</p>
